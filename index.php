@@ -1,6 +1,9 @@
 <?php
 require_once 'autoloader.php';
 
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
 use Model\Schoolboy;
 use Model\Student;
 use Model\Engineer;
@@ -8,9 +11,6 @@ use Model\Mother;
 use Model\GirlFriend;
 use Model\Wife;
 use Model\Restaurant;
-
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
 
 $mother = new Mother('Lydmila Ivanovna', 44, 164, 78);
 $girl = new GirlFriend('Vika', 18, 164, 53);

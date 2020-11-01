@@ -3,11 +3,11 @@
 namespace Model;
 
 use Provider\FoodProviderInterface;
-use Traits\EatingTimeLoggerTrait;
+use Traits\EatingCheckerTrait;
 
 class Man extends Human
 {
-    use EatingTimeLoggerTrait;
+    use EatingCheckerTrait;
 
     protected $foodProvider;
 
